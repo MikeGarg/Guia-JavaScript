@@ -1,8 +1,8 @@
-// ejercicio 1
+/////////////////////////////////////// Ejercicio 1 ///////////////////////////////////////////////////
 // let dia = prompt("Como esta el dia hoy?")
 // console.log("El dia de hoy esta " + dia)
 
-// ejercicio 2
+/////////////////////////////////////// Ejercicio 2 ///////////////////////////////////////////////////
 // let num = prompt("indicar el radio")
 // function area(radio) {
 //     return Math.PI * radio ** 2
@@ -13,7 +13,7 @@
 // console.log("El Area es: " + area(num))
 // console.log("El perimetro es: " + perimetro(num))
 
-// ejercicio 3
+/////////////////////////////////////// Ejercicio 3 ///////////////////////////////////////////////////
 // let edad = prompt("indique su edad")
 // if (edad >= 18) {
 //     console.log("Ud es mayor, no vote a los KKs")
@@ -21,7 +21,7 @@
 //     console.log("Es menor, no haga cagadas")
 // }
 
-// ejercicio 4
+/////////////////////////////////////// Ejercicio 4 ///////////////////////////////////////////////////
 // let letra = prompt("Ingrese una letra, solo puede ser N o S");
 // letra = letra.toUpperCase()
 // console.log(letra)
@@ -31,7 +31,7 @@
 //     console.log("INCORRECTO")
 // }
 
-// ejercicio 5
+/////////////////////////////////////// Ejercicio 5 ///////////////////////////////////////////////////
 // let opcion = prompt(`Elegir la operacion:
 //     suma = s/S
 //     resta = r/R
@@ -56,7 +56,7 @@
 //         break;
 // }
 
-// ejercicio 6
+/////////////////////////////////////// Ejercicio 6 ///////////////////////////////////////////////////
 // let opcion = prompt("ingrese un numero")
 // if (opcion == 0) {
 //     console.log("el numero no es par ni impar")
@@ -66,7 +66,7 @@
 //     console.log("el numero es impar")
 // }
 
-// ejercicio 7
+/////////////////////////////////////// Ejercicio 7 ///////////////////////////////////////////////////
 // let limite = prompt("ingrese el limite a llegar")
 // let num = 0
 // do {
@@ -79,7 +79,7 @@
 // console.log("Se alcanzo el numero limite, sumando: " + num)
 
 
-// ejercicio 8
+/////////////////////////////////////// Ejercicio 8 ///////////////////////////////////////////////////
 // let contador = 0
 // let suma = 0
 // let max = 0
@@ -113,7 +113,7 @@
 // console.log("contador " + contador)
 // console.log("El promedio total es: " + (suma / contador))
 
-// ejercicio 9
+/////////////////////////////////////// Ejercicio 9 ///////////////////////////////////////////////////
 // let palabra = prompt("Ingrese una palabra")
 // let resultado = ""
 // for (let i = 0; i < palabra.length; i++) {
@@ -121,7 +121,7 @@
 // }
 // console.log(resultado)
 
-// ejercicio 10
+/////////////////////////////////////// Ejercicio 10 ///////////////////////////////////////////////////
 // let palabra = prompt("Ingrese una palabra")
 // let resultado = ""
 // for (let i = palabra.length - 1; i >= 0; i--) {
@@ -129,7 +129,7 @@
 // }
 // console.log(resultado)
 
-// ejercicio 10.1
+/////////////////////////////////////// Ejercicio 10.1 ///////////////////////////////////////////////////
 // let palabra = prompt("Ingrese una palabra")
 // palabra = palabra.split("").reverse()
 // palabra = palabra.toString()
@@ -160,12 +160,12 @@
 
 // console.log(fraseMasLarga)
 
-// Ejercicio 12
+/////////////////////////////////////// Ejercicio 12 ///////////////////////////////////////////////////
 // let func = (a) => typeof(a);
 
 // console.log(func(1))
 
-// Ejercicio 13
+/////////////////////////////////////// Ejercicio 13 ///////////////////////////////////////////////////
 // let persona = new Object();
 // persona.nombre = "Alguien";
 // persona.sexo = "-";
@@ -181,7 +181,7 @@
 // console.log(persona)
 // console.log(persona2)
 
-// Ejercicio 14
+/////////////////////////////////////// Ejercicio 14 ///////////////////////////////////////////////////
 // function Libro(isbn, titulo, autor, paginas) {
 //     this.isbn = isbn
 //     this.titulo = titulo
@@ -197,7 +197,7 @@
 
 // console.log(libro)
 
-// Ejercicio 15
+/////////////////////////////////////// Ejercicio 15 ///////////////////////////////////////////////////
 // let area = (radio) => Math.PI * radio ** 2;
 // let perimetro = (radio) => Math.PI * radio * 2;
 
@@ -206,7 +206,7 @@
 // console.log("area =" + area(radio))
 // console.log("perimetro =" + perimetro(radio))
 
-// Ejercicio 16
+/////////////////////////////////////// Ejercicio 16 ///////////////////////////////////////////////////
 // let arreglo = new Array;
 // let arreglo2 = []
 
@@ -218,7 +218,7 @@
 // console.log(arreglo)
 // console.log(arreglo2)
 
-// Ejercicio 17
+/////////////////////////////////////// Ejercicio 17 ///////////////////////////////////////////////////
 // let arreglo = new Array;
 
 // for (let i = 0; i < 10; i++) {
@@ -228,7 +228,9 @@
 // arreglo.splice(arreglo.length-2,arreglo.length);
 // console.log(arreglo)
 
-// Ejercicio 18
+
+/////////////////////////////////////// Ejercicio 18 ///////////////////////////////////////////////////
+
 // var valores = [true, 5, false, "hola", "adios", 2]
 
 // if (valores[3].length > valores[4].length) {
@@ -255,7 +257,9 @@
 
 // funcion(a,b);
 
-// Ejercicio 19
+
+/////////////////////////////////////// Ejercicio 19 ///////////////////////////////////////////////////
+
 // let arreglo = new Array();
 // let arreglo2 = [];
 
@@ -282,7 +286,8 @@
 // console.log(arreglo2)
 
 
-// Ejercicio 20
+/////////////////////////////////////// Ejercicio 20 ///////////////////////////////////////////////////
+
 // let arr1 = [1, 2, 3, 4, 5];
 
 // let arr2 = arr1.map(function (x) {
@@ -297,17 +302,57 @@
 
 // console.log(arr3)
 
-let Persona = {
-    nombre: "Steven",
-    edad: "45",
-    sexo: "O",
-    peso: "90",
-    altura: "123",
+/////////////////////////////////////// Ejercicio 21 ///////////////////////////////////////////////////
+
+// let Persona = {
+//     nombre: "Steven",
+//     edad: "45",
+//     sexo: ["H","M","O"],
+//     peso: "90",
+//     altura: "123",
+// }
+
+// console.log(Object.values(Persona));
+// output: Array ["Steven", 45, Array ["H","M","O"], "90", "123"]
+
+// const str = JSON.stringify(Persona)
+// console.log(str)
+
+/////////////////////////////////////// Ejercicio 22 ///////////////////////////////////////////////////
+
+// function hacerClick (){
+//     alert("hicistes click!")
+// }
+
+// document.getElementById("click").onclick = hacerClick;
+
+/////////////////////////////////////// Ejercicio 23 ///////////////////////////////////////////////////
+
+const div = "Como mark observamos en el ejemplo de json, tenemos distintas keys, pero como no es una matriz, no podemos recorrer, entonces lo que podemos hacer para obtener un resultado de este objeto seria obtener el key que deseamos buscar. Cada key que existe en el json se puede obtener. al llamar la key nos devolverá automáticamente el valor que representa la key, es decir si llamamos a key name, nos retornara el valor de peter. En el ejemplo anterior podemos observar que llamamos a una key tomando la información a partir del objeto. También existe otros casos donde nosotros podemos recorrer una matriz, esto seria cuando tenemos varios datos dentro del mismo. para tal característica podemos recorrer la matriz y obtener los keys que necesitemos.";
+
+let arreglo = div.textContent.split(" ");
+
+for (let i = 0; i < arreglo.length; i++) {
+    if (arreglo[i].length > 7){
+        arreglo[i] = "<strong>"+arreglo[i]+"</strong>";
+    }
 }
 
-console.log(persona)
+const p = document.createElement("p")
+p.innerHTML = arreglo
+div.appendChild(p)
 
-    for (const key of Persona.key(Persona) ) {
+// for (let i = 0; i < arreglo.length; i++) {
+    
+// }
 
-    };
+// div.textContent = "Hola a todos"; // <div>Hola a todos</div>
+// div.textContent;
+
+
+
+
+
+
+
     
