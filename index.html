@@ -5,24 +5,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="/css/style.css">
 
 </head>
 
 <body>
 
-  <div class="container">
-
-    <div></div>
+  <div class="main">
 
     <h1>--Bienvenidos--</h1>
 
-    <button type="button" id="click">
+    <!-- Ejercicio del Boton | Tambien se puede agregar como atributo, llamando a la funcion: onclick="hacerClick ()" -->
+    <button type="button" id="click" >
       soy un boton
     </button>
 
-    <p id="texto"></p>
+    <!-- Ejercicio Modificar Texto -->
+    <div class="container">
+      <p id="texto"><span>Como</span> mark observamos en el ejemplo de json, tenemos distintas keys</p>
+    </div>
+
+    <!-- Ejercicio Calulcar Radio -->
+    <h1> Calcular Radio </h1><br>
+
+    <form class="formulario" th:action="@{/noticia/registro}" method="POST">
+      <input hidden th:value="${id}" name="id">
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"></label>
+        <input type="text" class="form-control" name="titulo" id="exampleFormControlInput1"
+          placeholder="Diametro del Circulo" th:value="${titulo}">
+      </div>
+
+      <p id="resultadoRadio"></p>
+
+      <br><br>
+
+      <input class="btn btn-secondary" type="submit" value="Submit">
+      <br>
+
+    </form>
+
+    <br><br>
 
   </div>
+
 
 
 

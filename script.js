@@ -320,35 +320,28 @@
 
 /////////////////////////////////////// Ejercicio 22 ///////////////////////////////////////////////////
 
-// function hacerClick (){
-//     alert("hicistes click!")
-// }
+function hacerClick (){
+    alert("Gracias por compartir tus contraseñas!")
+    alert("Muajajaja")
+}
 
-// document.getElementById("click").onclick = hacerClick;
+document.getElementById("click").onclick = hacerClick;
 
 /////////////////////////////////////// Ejercicio 23 ///////////////////////////////////////////////////
 
-const div = "Como mark observamos en el ejemplo de json, tenemos distintas keys, pero como no es una matriz, no podemos recorrer, entonces lo que podemos hacer para obtener un resultado de este objeto seria obtener el key que deseamos buscar. Cada key que existe en el json se puede obtener. al llamar la key nos devolverá automáticamente el valor que representa la key, es decir si llamamos a key name, nos retornara el valor de peter. En el ejemplo anterior podemos observar que llamamos a una key tomando la información a partir del objeto. También existe otros casos donde nosotros podemos recorrer una matriz, esto seria cuando tenemos varios datos dentro del mismo. para tal característica podemos recorrer la matriz y obtener los keys que necesitemos.";
+const paragraph = document.getElementById("texto");
 
-let arreglo = div.textContent.split(" ");
+let words = paragraph.textContent.split(" ");
 
-for (let i = 0; i < arreglo.length; i++) {
-    if (arreglo[i].length > 7){
-        arreglo[i] = "<strong>"+arreglo[i]+"</strong>";
-    }
-}
+for (let i = 0; i < words.length; i++) {
+    if (words[i].length > 8) {
+        words[i] = "<span>" + words[i] + "</span>"; //No pude hacer andar el css del span. Pero funciona
+      }
+};
 
-const p = document.createElement("p")
-p.innerHTML = arreglo
-div.appendChild(p)
+paragraph.innerHTML = words.join(" ");
 
-// for (let i = 0; i < arreglo.length; i++) {
-    
-// }
-
-// div.textContent = "Hola a todos"; // <div>Hola a todos</div>
-// div.textContent;
-
+/////////////////////////////////////// Ejercicio 24 ///////////////////////////////////////////////////
 
 
 
