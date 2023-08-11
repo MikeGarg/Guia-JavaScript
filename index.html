@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/css/style.css">
-
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
 </head>
 
 <body>
@@ -16,35 +16,35 @@
     <h1>--Bienvenidos--</h1>
 
     <!-- Ejercicio del Boton | Tambien se puede agregar como atributo, llamando a la funcion: onclick="hacerClick ()" -->
-    <button type="button" id="click" >
+    <button type="button" id="click">
       soy un boton
     </button>
 
     <!-- Ejercicio Modificar Texto -->
     <div class="container">
-      <p id="texto"><span>Como</span> mark observamos en el ejemplo de json, tenemos distintas keys</p>
+      <p id="texto">Como observamos en el ejemplo de json, tenemos distintas keys</p>
     </div>
+
+    <br><br>
 
     <!-- Ejercicio Calulcar Radio -->
     <h1> Calcular Radio </h1><br>
 
-    <form class="formulario" th:action="@{/noticia/registro}" method="POST">
-      <input hidden th:value="${id}" name="id">
-
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"></label>
-        <input type="text" class="form-control" name="titulo" id="exampleFormControlInput1"
-          placeholder="Diametro del Circulo" th:value="${titulo}">
-      </div>
-
+    <form class="formulario">
+      <input type="number" class="form-control" id="diametro" placeholder="Ingrese el diametro">
       <p id="resultadoRadio"></p>
-
-      <br><br>
-
-      <input class="btn btn-secondary" type="submit" value="Submit">
+      <button type="button" id="ingresoDiametro">Enviar</button>
       <br>
-
     </form>
+
+    <!-- Otro ejercicio -->
+    <form id="form1" onsubmit="getFormValores()">
+      Nombre: <input type="text" name="nombre" value="David"><br>
+      Apellido: <input type="text" name="apellido" value="Beckham"><br>
+      <input type="submit" value="Submit"></input>
+    </form>
+    <p id="imprimirNombre"></p>
+
 
     <br><br>
 

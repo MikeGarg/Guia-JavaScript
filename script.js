@@ -320,7 +320,7 @@
 
 /////////////////////////////////////// Ejercicio 22 ///////////////////////////////////////////////////
 
-function hacerClick (){
+function hacerClick() {
     alert("Gracias por compartir tus contraseñas!")
     alert("Muajajaja")
 }
@@ -335,8 +335,8 @@ let words = paragraph.textContent.split(" ");
 
 for (let i = 0; i < words.length; i++) {
     if (words[i].length > 8) {
-        words[i] = "<span>" + words[i] + "</span>"; //No pude hacer andar el css del span. Pero funciona
-      }
+        words[i] = "<span>" + words[i] + "</span>"; //Tambien se puede realizar con </mark>
+    }
 };
 
 paragraph.innerHTML = words.join(" ");
@@ -344,8 +344,40 @@ paragraph.innerHTML = words.join(" ");
 /////////////////////////////////////// Ejercicio 24 ///////////////////////////////////////////////////
 
 
+function calcularRadio() {
+
+    let radio = (parseInt(document.getElementById("diametro").value)) / 2;
+
+    let resultado = document.getElementById("resultadoRadio");
+
+    radio = document.createTextNode(radio)
+    resultado.innerHTML = radio.textContent
+}
+
+document.getElementById("ingresoDiametro").onclick = calcularRadio;
+
+/////////////////////////////////////// Ejercicio 25 ///////////////////////////////////////////////////
+
+
+function getFormValores() {
+
+    let nombre = document.getElementById("form1").elements["nombre"].value;
+    let apellido = document.getElementById("form1").elements["apellido"].value;
+    document.getElementById("imprimirNombre").innerHTML = nombre;
+    // let impresion = document.getElementById("imprimirNombre");
+
+    // nombre = document.createTextNode(nombre)
+    // impresion.innerHTML = nombre.textContent
+
+}
+
+document.getElementById("form1").addEventListener("submit",function(event){
+    event.preventDefault();
+})
 
 
 
 
-    
+
+
+
