@@ -359,20 +359,34 @@ document.getElementById("ingresoDiametro").onclick = calcularRadio;
 /////////////////////////////////////// Ejercicio 25 ///////////////////////////////////////////////////
 
 
-function getFormValores() {
 
-    let nombre = document.getElementById("form1").elements["nombre"].value;
-    let apellido = document.getElementById("form1").elements["apellido"].value;
-    document.getElementById("imprimirNombre").innerHTML = nombre;
-    // let impresion = document.getElementById("imprimirNombre");
+// function getFormValores() {
 
-    // nombre = document.createTextNode(nombre)
-    // impresion.innerHTML = nombre.textContent
+//     // let nombre = document.getElementById("form1").elements["nombre"].value;
+//     let nombre = document.getElementById("form1");
+//     console.log(nombre.getAttributeNames())
+    
 
-}
+//     let apellido = document.getElementById("form1").elements["apellido"].value;
+
+
+//     document.getElementById("imprimirNombre").innerHTML = nombre;
+//     // let impresion = document.getElementById("imprimirNombre");
+
+//     // nombre = document.createTextNode(nombre)
+//     // impresion.innerHTML = nombre.textContent
+// }
+
+// ******************/////////////////////
 
 document.getElementById("form1").addEventListener("submit",function(event){
+
     event.preventDefault();
+    const data = new FormData(event.currentTarget)
+    const nombre = data.get('nombre').toString()
+    const contraseña = data.get('apellido').toString()
+
+    document.getElementById("imprimirNombre").innerHTML = nombre;
 })
 
 
